@@ -23,6 +23,6 @@ services:
     environment:
       - ASPNETCORE_URLS=http://+:5001
       - ASPNETCORE_ENVIRONMENT=Development 
-      - KAFKA_BROKER=localhost:9092
+      - KAFKA_BROKER=kafka:9092
     depends_on:
       - kafka
