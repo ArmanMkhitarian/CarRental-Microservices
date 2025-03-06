@@ -26,3 +26,10 @@ services:
       - KAFKA_BROKER=kafka:9092
     depends_on:
       - kafka
+  caravailabilityservice:
+    build:
+      context: ../services/CarAvailabilityService
+    environment:
+      - KAFKA_BROKER=kafka:9092
+    depends_on:
+      - kafka
