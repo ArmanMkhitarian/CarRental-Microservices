@@ -1,6 +1,12 @@
+using CarBookingService.Kafka;
+using CarBookingService.Services;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.AddSingleton<BookingProducer>();
+builder.Services.AddScoped<IBookingService, BookingService>();
+
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
