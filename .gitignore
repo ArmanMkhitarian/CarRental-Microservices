@@ -1,0 +1,60 @@
+# 🔹 Операционные системы
+.DS_Store
+Thumbs.db
+
+# 🔹 .NET
+bin/
+obj/
+.vscode/
+.idea/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# 🔹 Docker
+**/docker-compose.override.yml
+**/docker-compose.*.yml
+.dockerignore
+logs/
+.env
+
+# 🔹 Rider и JetBrains
+*.iml
+.idea/
+*.dotSettings
+*.ReSharper
+
+# 🔹 Visual Studio Code
+.vscode/
+.history/
+*.code-workspace
+
+# 🔹 NuGet
+*.nupkg
+packages/
+project.lock.json
+project.assets.json
+
+# 🔹 Node.js (если вдруг есть фронтенд)
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# 🔹 Kafka (логи и временные файлы)
+kafka-logs/
+zookeeper-logs/
+
+# 🔹 Linux и MacOS временные файлы
+*.swp
+
+
+# 🔹 Visual Studio
+.vs/
+*.suo
+*.user
+*.json
+
+
+# 🔹 Visual Studio launch settings
+Properties/launchSettings.json

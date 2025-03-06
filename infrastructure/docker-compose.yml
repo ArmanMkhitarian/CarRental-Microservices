@@ -3,6 +3,8 @@ services:
     image: bitnami/zookeeper:latest
     ports:
       - "2181:2181"
+    environment:
+        - ALLOW_ANONYMOUS_LOGIN=yes 
 
   kafka:
     image: bitnami/kafka:latest
@@ -20,6 +22,7 @@ services:
       - "5001:5001"
     environment:
       - ASPNETCORE_URLS=http://+:5001
+      - ASPNETCORE_ENVIRONMENT=Development 
       - KAFKA_BROKER=localhost:9092
     depends_on:
       - kafka
