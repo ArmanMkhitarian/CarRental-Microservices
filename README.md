@@ -7,5 +7,4 @@
 ✅ **Kafka (Confluent.Kafka)** — брокер сообщений  
 ✅ **Docker + Docker Compose** — для контейнеризации сервисов  
 ✅ **Swagger** — для тестирования API  
-✅ **PostgreSQL, MongoDB** — база данных  
-✅ **OpenTelemetry (в будущем)** — мониторинг  
+✅ **PostgreSQL, MongoDB** — база данных    
